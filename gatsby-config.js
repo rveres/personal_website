@@ -6,7 +6,7 @@ module.exports = {
     url: 'https://robertveres.com',
     title: 'Robert Veres official website.',
     subtitle:
-      "I'm a senior in Charlotte, North Carolina who loves programming, biology, and math--just to name a few. You've stumbled across my slice of the internet: here, you'll find some info about me as well as some of my writing.",
+      "I'm a senior in Charlotte, North Carolina who loves programming, biology, and math--just to name a few. You've stumbled across my slice of the internet: here, you'll find some info about who I am and what I do, as well as some of my writing.",
     copyright: '© 2019 All rights reserved.',
     disqusShortname: '',
     menu: [
