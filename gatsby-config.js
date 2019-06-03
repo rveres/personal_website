@@ -8,6 +8,7 @@ module.exports = {
     subtitle:
       "I'm a senior in Charlotte, North Carolina who loves programming, biology, and math--just to name a few. You've stumbled across my slice of the internet: here, you'll find some info about who I am and what I do, as well as some of my writing.",
     copyright: '© 2019 All rights reserved.',
+    credits: 'Made with ❤️ in Charlotte.',
     disqusShortname: '',
     menu: [
       {
