@@ -3,32 +3,32 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
+    url: 'https://robertveres.com',
+    title: 'Robert Veres official website.',
     subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-    copyright: '© All rights reserved.',
+      "I'm a senior in Charlotte, North Carolina who loves programming, biology, and math--just to name a few. You've stumbled across my slice of the internet: here, you'll find some info about who I am and what I do, as well as some of my writing.",
+    copyright: '© 2019 All rights reserved.',
     disqusShortname: '',
     menu: [
       {
-        label: 'Posts',
+        label: 'About',
         path: '/',
       },
       {
-        label: 'About me',
-        path: '/about/',
+        label: 'Posts',
+        path: '/posts/',
       },
       {
-        label: 'Contact me',
+        label: 'Contact',
         path: '/contact/',
       },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
+      name: 'Robert Veres',
+      email: 'thedeveloper733@gmail.com',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'thedeveloper733',
       rss: '#',
       vk: '#',
     },
