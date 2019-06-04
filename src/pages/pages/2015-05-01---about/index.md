@@ -13,4 +13,10 @@ Beyond those things, I'm also Hungarian. And a vegetarian. And run 5Ks. And an (
 
 *That's me!*
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+## Robert, the programmer
+Here's a little more about what I do:
+* **Backend Web Development** with a variety of platforms and databases
+* **Frontend Web Development** in most of the popular frameworks
+* **Mobile Development** on Android and iOS with Flutter & React Native
+* **Data Analysis** and **Machine Learning** using Pandas, Numpy, TensorFlow, and Keras
+* **Low-Level Programming** in C and Assembly for Intel architectures
