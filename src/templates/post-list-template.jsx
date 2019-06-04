@@ -7,9 +7,15 @@ import PostList from '../components/PostList'
 class PostListTemplate extends React.Component {
   render() {
     const { title, subtitle } = this.props.data.site.siteMetadata
+    const description = subtitle
+
     return (
       <Layout>
         <div>
+          <Helmet>
+            <title>{`Posts - ${title}`}</title>
+            <meta name="description" content={description} />
+          </Helmet>
           <PostList {...this.props} />
         </div>
       </Layout>

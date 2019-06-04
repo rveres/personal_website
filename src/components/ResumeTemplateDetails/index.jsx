@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby';
 import Sidebar from '../Sidebar'
 import './style.scss'
 
@@ -17,7 +18,6 @@ class ResumeTemplateDetails extends React.Component {
 
   render() {
     const { pageNumber, numPages } = this.state;
-
     const { title, subtitle } = this.props.data.site.siteMetadata
 
     return (
@@ -34,6 +34,9 @@ class ResumeTemplateDetails extends React.Component {
                   <Page pageNumber={1} />
                   <Page pageNumber={2} />
                 </Document>
+                <div>
+                  <a href="/resume.pdf" target="_blank">Open</a> this résumé as a PDF.
+                </div>
               </div>
             </div>
           </div>

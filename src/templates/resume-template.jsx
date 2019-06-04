@@ -1,14 +1,20 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import ResumeTemplateDetails from '../components/ResumeTemplateDetails'
 
 class ResumeTemplate extends React.Component {
   render() {
     const { title, subtitle } = this.props.data.site.siteMetadata
+    const description = subtitle
 
     return (
       <Layout>
         <div>
+          <Helmet>
+            <title>{`Résumé - ${title}`}</title>
+            <meta name="description" content={description} />
+          </Helmet>
           <ResumeTemplateDetails {...this.props} />
         </div>
       </Layout>

@@ -25,13 +25,13 @@ module.exports = {
         path: '/projects/'
       },
       {
+        label: 'Résumé',
+        path: '/resume/',
+      },
+      {
         label: 'Contact',
         path: '/contact/',
       },
-      {
-        label: 'Resume',
-        path: '/resume/',
-      }
     ],
     author: {
       name: 'Robert Veres',

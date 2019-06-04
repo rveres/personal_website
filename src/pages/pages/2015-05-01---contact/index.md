@@ -4,7 +4,7 @@ layout: page
 path: "/contact"
 ---
 
-Hey ho! Felt the need to reach out? Luckily, you've come to the right place.
+Felt the need to reach out? Luckily, you've come to the right place.
 
 ## Let's get in touch
 The best way to contact me is by [email](mailto:thedeveloper733@gmail.com). However, please try to keep it brief. I'll get back to you within a few days.
