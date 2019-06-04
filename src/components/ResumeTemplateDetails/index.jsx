@@ -2,9 +2,23 @@ import React from 'react'
 import Sidebar from '../Sidebar'
 import './style.scss'
 
+import { Document, Page } from 'react-pdf';
+import resume from './resume.pdf';
+
 class ResumeTemplateDetails extends React.Component {
+  state = {
+    numPages: null,
+    pageNumber: 1,
+  }
+  
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  }
+
   render() {
-    const page = this.props.data.markdownRemark
+    const { pageNumber, numPages } = this.state;
+
+    const { title, subtitle } = this.props.data.site.siteMetadata
 
     return (
       <div>
@@ -15,8 +29,12 @@ class ResumeTemplateDetails extends React.Component {
               <div
                 className="page__body"
                 /* eslint-disable-next-line react/no-danger */
-                dangerouslySetInnerHTML={{ __html: page.html }}
-              />
+              >
+                <Document file={resume} onLoadSuccess={this.onDocumentLoadSuccess}>
+                  <Page pageNumber={1} />
+                  <Page pageNumber={2} />
+                </Document>
+              </div>
             </div>
           </div>
         </div>
@@ -26,3 +44,49 @@ class ResumeTemplateDetails extends React.Component {
 }
 
 export default ResumeTemplateDetails
+
+export const pageQuery = graphql`
+  query ResumeQuery {
+    site {
+      siteMetadata {
+        title
+        subtitle
+        copyright
+        credits
+        menu {
+          label
+          path
+        }
+        author {
+          name
+          email
+          telegram
+          twitter
+          github
+          rss
+          vk
+        }
+      }
+    }
+    allMarkdownRemark(
+      limit: 1000
+      filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            categorySlug
+          }
+          frontmatter {
+            title
+            date
+            category
+            description
+          }
+        }
+      }
+    }
+  }
+`
