@@ -54,6 +54,12 @@ exports.createPages = ({ graphql, actions }) => {
             component: slash(postListTemplate),
             context: { slug: edge.node.fields.slug },
           })
+        } else if (_.get(edge, 'node.frontmatter.layout') === 'resume') {
+          createPage({
+            path: edge.node.fields.slug,
+            component: slash(postListTemplate),
+            context: { slug: edge.node.fields.slug },
+          })
         } else if (_.get(edge, 'node.frontmatter.layout') === 'post') {
           createPage({
             path: edge.node.fields.slug,

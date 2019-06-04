@@ -19,10 +19,19 @@ module.exports = {
         label: 'Posts',
         path: '/posts/',
       },
+      
+      {
+        label: 'Projects',
+        path: '/projects/'
+      },
       {
         label: 'Contact',
         path: '/contact/',
       },
+      {
+        label: 'Resume',
+        path: '/resume/',
+      }
     ],
     author: {
       name: 'Robert Veres',
