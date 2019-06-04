@@ -1,33 +1,55 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import Post from '../Post'
+import { Link } from 'gatsby';
 import Sidebar from '../Sidebar'
+import './style.scss'
 
-class PostList extends React.Component {
+import { Document, Page } from 'react-pdf';
+import resume from './resume.pdf';
+
+class ResumeTemplateDetails extends React.Component {
+  state = {
+    numPages: null,
+    pageNumber: 1,
+  }
+  
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  }
+
   render() {
-    const items = []
+    const { pageNumber, numPages } = this.state;
     const { title, subtitle } = this.props.data.site.siteMetadata
-    const posts = this.props.data.allMarkdownRemark.edges
-    posts.forEach(post => {
-      items.push(<Post data={post} key={post.node.fields.slug} />)
-    })
 
     return (
       <div>
         <Sidebar {...this.props} />
         <div className="content">
-          <div className="content__inner">{items}</div>
+          <div className="content__inner">
+            <div className="page">
+              <div
+                className="page__body"
+                /* eslint-disable-next-line react/no-danger */
+              >
+                <Document file={resume} onLoadSuccess={this.onDocumentLoadSuccess}>
+                  <Page pageNumber={1} />
+                  <Page pageNumber={2} />
+                </Document>
+                <div>
+                  <a href="/resume.pdf" target="_blank">Open</a> this résumé as a PDF.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )
   }
 }
 
-export default PostList
+export default ResumeTemplateDetails
 
 export const pageQuery = graphql`
-  query PostListQuery {
+  query ResumeQuery {
     site {
       siteMetadata {
         title

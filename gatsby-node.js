@@ -14,6 +14,7 @@ exports.createPages = ({ graphql, actions }) => {
     const categoryTemplate = path.resolve(
       './src/templates/category-template.jsx'
     )
+    const resumeTemplate = path.resolve('./src/templates/resume-template.jsx')
 
     graphql(`
       {
@@ -52,6 +53,12 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path: edge.node.fields.slug,
             component: slash(postListTemplate),
+            context: { slug: edge.node.fields.slug },
+          })
+        } else if (_.get(edge, 'node.frontmatter.layout') === 'resume') {
+          createPage({
+            path: edge.node.fields.slug,
+            component: slash(resumeTemplate),
             context: { slug: edge.node.fields.slug },
           })
         } else if (_.get(edge, 'node.frontmatter.layout') === 'post') {

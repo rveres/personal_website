@@ -1,10 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import PostList from '../components/PostList'
+import ResumeTemplateDetails from '../components/ResumeTemplateDetails'
 
-class PostListTemplate extends React.Component {
+class ResumeTemplate extends React.Component {
   render() {
     const { title, subtitle } = this.props.data.site.siteMetadata
     const description = subtitle
@@ -13,20 +12,20 @@ class PostListTemplate extends React.Component {
       <Layout>
         <div>
           <Helmet>
-            <title>{`Posts - ${title}`}</title>
+            <title>{`Résumé - ${title}`}</title>
             <meta name="description" content={description} />
           </Helmet>
-          <PostList {...this.props} />
+          <ResumeTemplateDetails {...this.props} />
         </div>
       </Layout>
     )
   }
 }
 
-export default PostListTemplate
+export default ResumeTemplate
 
 export const pageQuery = graphql`
-  query PostListTemplateQuery {
+  query ResumeTemplateQuery {
     site {
       siteMetadata {
         title

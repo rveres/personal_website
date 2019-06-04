@@ -58,6 +58,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
+        credits
         menu {
           label
           path
