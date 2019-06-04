@@ -9,6 +9,7 @@
         @include line-height(2);
         @include margin-top(0);
         // @include margin-bottom(1.45);
+        // border-bottom: 1px solid $color-base;
     }
     &__body {
         font-size: $typographic-base-font-size;
