@@ -9,7 +9,8 @@ I'm Robert Veres, a high school student in Charlotte, North Carolina. I write co
 
 Beyond those things, I'm also Hungarian. And a vegetarian. And run 5Ks. And an (amateur) [photographer](https://www.flickr.com/photos/152383209@N08/). And am deeply involved in international affairs. (Phew.)
 
-![That's me](./profile.jpg)
+
+![That's me](./profile1.jpg)
 
 *That's me!*
 
