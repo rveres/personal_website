@@ -12,7 +12,7 @@ class Layout extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { height: 0 };
+    this.state = { height: window.innerHeight };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
