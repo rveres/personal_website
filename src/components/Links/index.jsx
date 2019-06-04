@@ -23,7 +23,7 @@ class Links extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="icon-github" />
+              <i className="icon-github-circled" />
             </a>
           </li>
           <li className="links__list-item">
@@ -33,7 +33,7 @@ class Links extends React.Component {
           </li>
           <li className="links__list-item">
             <a href={`mailto:${links.email}`}>
-              <i className="icon-mail" />
+              <i className="icon-mail-alt" />
             </a>
           </li>
         </ul>

@@ -16,4 +16,22 @@
         @include line-height(1);
         @include margin(0, 0, 1);
     }
+    p {
+        a {
+            &:hover {
+                color: $color-primary;
+                border-bottom: 1px solid $color-primary;
+            }
+            &.gatsby-resp-image-link {
+                &:hover {
+                    color: $color-primary;
+                    border: 0;
+                }
+                &:focus {
+                    color: $color-primary;
+                    border: 0;
+                }
+            }
+        }
+    }
 }
