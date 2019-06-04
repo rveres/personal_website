@@ -13,7 +13,7 @@ export default function HTML(props) {
         />
         <style>
           { `body::-webkit-scrollbar {
-            display: none;
+            width: 0 !important;
           }
           body {
             overflow: -moz-scrollbars-none;
