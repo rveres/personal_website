@@ -68,6 +68,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date
+            github
             type
             elements
             description
