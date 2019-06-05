@@ -16,7 +16,7 @@ class ElementTemplateDetails extends React.Component {
           <div className="page">
             <h1 className="page__title">
               All Projects using &quot;
-              {tagTitle}
+              {elementTitle}
               &quot;
             </h1>
             <div className="page__body">{items}</div>
