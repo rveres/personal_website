@@ -13,7 +13,7 @@ class ProjectListTemplate extends React.Component {
       <Layout>
         <div>
           <Helmet>
-            <title>{`Posts - ${title}`}</title>
+            <title>{`Projects - ${title}`}</title>
             <meta name="description" content={description} />
           </Helmet>
           <ProjectList {...this.props} />
