@@ -12,8 +12,8 @@ class ProjectTemplateDetails extends React.Component {
 
     const homeBlock = (
       <div>
-        <Link className="post-single__home-button" to="/posts/">
-          All Posts
+        <Link className="post-single__home-button" to="/projects/">
+          All Projects
         </Link>
       </div>
     )
