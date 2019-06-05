@@ -4,6 +4,7 @@ date: "2016-09-01T23:46:37.121Z"
 layout: project
 draft: false
 path: "/projects/perfecting/"
+github: "https://github.com/thedeveloper733/SandLine_MLH_Local_Hack_Day_Project"
 type: "artificial intelligence"
 elements:
   - "dot-net"

@@ -1,0 +1,29 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.page {
+    .page__body {
+        .project {
+            a {
+                &:hover {
+                    color: #222;
+                    border-bottom: 1px solid #222;
+                }
+            }
+            &__meta-category {
+                a {
+                    &:hover {
+                        color: $color-primary;
+                        border-bottom: 0px solid $color-primary;
+                    }
+                }
+            }
+            .project__readmore {
+                &:hover {
+                    color: $color-primary;
+                    border-bottom: 1px solid $color-primary;
+                }
+            }
+        }
+    }
+}

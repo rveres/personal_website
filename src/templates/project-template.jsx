@@ -7,15 +7,15 @@ import ProjectTemplateDetails from '../components/ProjectTemplateDetails/index'
 class ProjectTemplate extends React.Component {
   render() {
     const { title, subtitle } = this.props.data.site.siteMetadata
-    const post = this.props.data.markdownRemark
-    const { title: postTitle, description: postDescription } = post.frontmatter
-    const description = postDescription !== null ? postDescription : subtitle
+    const project = this.props.data.markdownRemark
+    const { title: projectTitle, description: projectDescription } = project.frontmatter
+    const description = projectDescription !== null ? projectDescription : subtitle
 
     return (
       <Layout>
         <div>
           <Helmet>
-            <title>{`${postTitle} - ${title}`}</title>
+            <title>{`${projectTitle} - ${title}`}</title>
             <meta name="description" content={description} />
           </Helmet>
           <ProjectTemplateDetails {...this.props} />
@@ -52,9 +52,10 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        elements
         date
+        github
         description
+        elements
       }
     }
   }
