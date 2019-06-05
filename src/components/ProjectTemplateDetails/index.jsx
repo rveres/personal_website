@@ -3,28 +3,28 @@ import { Link } from 'gatsby'
 import moment from 'moment'
 import './style.scss'
 
-class PostTemplateDetails extends React.Component {
+class ProjectTemplateDetails extends React.Component {
   render() {
     const { subtitle, author } = this.props.data.site.siteMetadata
-    const post = this.props.data.markdownRemark
-    const tags = post.fields.tagSlugs
+    const project = this.props.data.markdownRemark
+    const elements = project.fields.elementSlugs
 
     const homeBlock = (
       <div>
-        <Link className="post-single__home-button" to="/posts/">
-          All Posts
+        <Link className="post-single__home-button" to="/projects/">
+          All Projects
         </Link>
       </div>
     )
 
-    const tagsBlock = (
+    const elementsBlock = (
       <div className="post-single__tags">
         <ul className="post-single__tags-list">
-          {tags &&
-            tags.map((tag, i) => (
-              <li className="post-single__tags-list-item" key={tag}>
-                <Link to={tag} className="post-single__tags-list-item-link">
-                  {post.frontmatter.tags[i]}
+          {elements &&
+            elements.map((element, i) => (
+              <li className="post-single__tags-list-item" key={element}>
+                <Link to={element} className="post-single__tags-list-item-link">
+                  {project.frontmatter.elements[i]}
                 </Link>
               </li>
             ))}
@@ -37,20 +37,20 @@ class PostTemplateDetails extends React.Component {
         {homeBlock}
         <div className="post-single">
           <div className="post-single__inner">
-            <h1 className="post-single__title">{post.frontmatter.title}</h1>
+            <h1 className="post-single__title">{project.frontmatter.title}</h1>
             <div
               className="post-single__body"
               /* eslint-disable-next-line react/no-danger */
-              dangerouslySetInnerHTML={{ __html: post.html }}
+              dangerouslySetInnerHTML={{ __html: project.html }}
             />
             <div className="post-single__date">
               <em>
-                Published {moment(post.frontmatter.date).format('D MMM YYYY')}
+                Published {moment(project.frontmatter.date).format('D MMM YYYY')}
               </em>
             </div>
           </div>
           <div className="post-single__footer">
-            {tagsBlock}
+            {elementsBlock}
             <hr />
             <p className="post-single__footer-text">
               {subtitle}
@@ -69,4 +69,4 @@ class PostTemplateDetails extends React.Component {
   }
 }
 
-export default PostTemplateDetails
+export default ProjectTemplateDetails

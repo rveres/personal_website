@@ -1,17 +1,17 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import Post from '../Post'
+import Project from '../Project/'
 import Sidebar from '../Sidebar'
 import './style.scss'
 
-class PostList extends React.Component {
+class ProjectList extends React.Component {
   render() {
     const items = []
     const { title, subtitle } = this.props.data.site.siteMetadata
-    const posts = this.props.data.allMarkdownRemark.edges
-    posts.forEach(post => {
-      items.push(<Post data={post} key={post.node.fields.slug} />)
+    const projects = this.props.data.allMarkdownRemark.edges
+    projects.forEach(project => {
+      items.push(<Project data={project} key={project.node.fields.slug} />)
     })
 
     return (
@@ -20,9 +20,9 @@ class PostList extends React.Component {
         <div className="content">
           <div className="content__inner">
             <h1 className="page__title">
-              <span className="page__title__text">Posts</span>
+              <span className="page__title__text">Projects</span>
             </h1>
-            <p className="post__page__title__subtext">My thoughts on various subjects, as well as updates on what I'm doing...</p>
+            <p className="post__page__title__subtext">Here's what I've been working on lately.</p>
             {items}
           </div>
         </div>
@@ -31,10 +31,10 @@ class PostList extends React.Component {
   }
 }
 
-export default PostList
+export default ProjectList
 
 export const pageQuery = graphql`
-  query PostListQuery {
+  query ProjectListQuery {
     site {
       siteMetadata {
         title
@@ -65,12 +65,14 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
-            categorySlug
+            typeSlug
+            elementSlugs
           }
           frontmatter {
             title
             date
-            category
+            github
+            type
             description
           }
         }
