@@ -18,6 +18,7 @@ exports.createPages = ({ graphql, actions }) => {
     const projectTemplate = path.resolve('./src/templates/project-template.jsx')
     const projectListTemplate = path.resolve('./src/templates/project-list-template.jsx')
     const elementTemplate = path.resolve('./src/templates/element-template.jsx')
+    const typeTemplate = path.resolve('./src/templates/type-template.jsx')
 
     graphql(`
       {
@@ -35,6 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
                 layout
                 category
                 elements
+                type
               }
             }
           }
@@ -129,18 +131,18 @@ exports.createPages = ({ graphql, actions }) => {
             })
           })
 
-          let categories = []
-          if (_.get(edge, 'node.frontmatter.category')) {
-            categories = categories.concat(edge.node.frontmatter.category)
+          let types = []
+          if (_.get(edge, 'node.frontmatter.type')) {
+            types = types.concat(edge.node.frontmatter.type)
           }
 
-          categories = _.uniq(categories)
-          _.each(categories, category => {
-            const categoryPath = `/categories/${_.kebabCase(category)}/`
+          types = _.uniq(types)
+          _.each(types, type => {
+            const typePath = `/types/${_.kebabCase(type)}/`
             createPage({
-              path: categoryPath,
-              component: categoryTemplate,
-              context: { category },
+              path: typePath,
+              component: typeTemplate,
+              context: { type },
             })
           })
         } 
@@ -187,12 +189,20 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       )}/`
       createNodeField({ node, name: 'categorySlug', value: categorySlug })
     }
-  }
+  
+    if (node.frontmatter.elements) {
+      const elementSlugs = node.frontmatter.elements.map(
+        element => `/elements/${_.kebabCase(element)}/`
+      )
+      createNodeField({ node, name: 'elementSlugs', value: elementSlugs })
+    }
 
-  if (node.frontmatter.elements) {
-    const elementSlugs = node.frontmatter.elements.map(
-      element => `/elements/${_.kebabCase(element)}/`
-    )
-    createNodeField({ node, name: 'elementSlugs', value: elementSlugs })
+    if (typeof node.frontmatter.type !== 'undefined') {
+      const typeSlug = `/types/${_.kebabCase(
+        node.frontmatter.type
+      )}/`
+      createNodeField({ node, name: 'typeSlug', value: typeSlug })
+    }
+  
   }
 }

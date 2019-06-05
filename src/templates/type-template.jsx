@@ -2,31 +2,30 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import ProjectList from '../components/ProjectList/'
+import Sidebar from '../components/Sidebar'
+import TypeTemplateDetails from '../components/TypeTemplateDetails/'
 
-class ProjectListTemplate extends React.Component {
+class TypeTemplate extends React.Component {
   render() {
-    const { title, subtitle } = this.props.data.site.siteMetadata
-    const description = subtitle
+    const { title } = this.props.data.site.siteMetadata
+    const { type } = this.props.pageContext
 
     return (
       <Layout>
         <div>
-          <Helmet>
-            <title>{`Projects - ${title}`}</title>
-            <meta name="description" content={description} />
-          </Helmet>
-          <ProjectList {...this.props} />
+          <Helmet title={`${type} - ${title}`} />
+          <Sidebar {...this.props} />
+          <TypeTemplateDetails {...this.props} />
         </div>
       </Layout>
     )
   }
 }
 
-export default ProjectListTemplate
+export default TypeTemplate
 
 export const pageQuery = graphql`
-  query ProjectListTemplateQuery {
+  query TypePage($type: String) {
     site {
       siteMetadata {
         title
@@ -50,7 +49,13 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 1000
-      filter: { frontmatter: { layout: { eq: "project" }, draft: { ne: true } } }
+      filter: {
+        frontmatter: {
+          type: { eq: $type }
+          layout: { eq: "project" }
+          draft: { ne: true }
+        }
+      }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

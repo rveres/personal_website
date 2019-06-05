@@ -8,10 +8,12 @@ class Project extends React.Component {
     const {
       title,
       date,
-      category,
+      type,
       description,
     } = this.props.data.node.frontmatter
-    const { slug, categorySlug } = this.props.data.node.fields
+    const { slug, typeSlug } = this.props.data.node.fields
+
+    console.log(type);
 
     return (
       <div className="post">
@@ -23,9 +25,9 @@ class Project extends React.Component {
             {moment(date).format('MMMM YYYY')}
           </time>
           <span className="post__meta-divider" />
-          <span className="post__meta-category" key={categorySlug}>
-            <Link to={categorySlug} className="post__meta-category-link">
-              {category}
+          <span className="post__meta-category" key={typeSlug}>
+            <Link to={typeSlug} className="post__meta-category-link">
+              {type}
             </Link>
           </span>
         </div>
