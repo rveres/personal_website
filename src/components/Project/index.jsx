@@ -9,25 +9,32 @@ class Project extends React.Component {
       title,
       date,
       type,
+      elements,
       description,
     } = this.props.data.node.frontmatter
-    const { slug, typeSlug } = this.props.data.node.fields
+    const { slug, typeSlug, elementSlugs } = this.props.data.node.fields
+
+    const elementsList = []
+    elements.forEach((element, i) => {
+      elementsList.push(
+        <span className="post__meta-category" key={elementSlugs[i]}>
+          <Link to={elementSlugs[i]} className="post__meta-category-link">
+            {element + ((elementSlugs.length == i+1) ? '' : ', ')}
+          </Link>
+        </span>
+      )
+    })
 
     return (
       <div className="post">
         <div className="post__meta">
-          <time
-            className="post__meta-time"
-            dateTime={moment(date).format('MMMM D, YYYY')}
-          >
-            {moment(date).format('MMMM YYYY')}
-          </time>
-          <span className="post__meta-divider" />
           <span className="post__meta-category" key={typeSlug}>
             <Link to={typeSlug} className="post__meta-category-link">
               {type}
             </Link>
           </span>
+          <span className="post__meta-divider" />
+          {elementsList}
         </div>
         <h2 className="post__title">
           <Link className="post__title-link" to={slug}>

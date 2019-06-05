@@ -63,11 +63,13 @@ export const pageQuery = graphql`
           fields {
             slug
             typeSlug
+            elementSlugs
           }
           frontmatter {
             title
             date
             type
+            elements
             description
           }
         }

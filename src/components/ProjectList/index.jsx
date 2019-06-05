@@ -9,9 +9,9 @@ class ProjectList extends React.Component {
   render() {
     const items = []
     const { title, subtitle } = this.props.data.site.siteMetadata
-    const posts = this.props.data.allMarkdownRemark.edges
-    posts.forEach(post => {
-      items.push(<Project data={post} key={post.node.fields.slug} />)
+    const projects = this.props.data.allMarkdownRemark.edges
+    projects.forEach(project => {
+      items.push(<Project data={project} key={project.node.fields.slug} />)
     })
 
     return (
@@ -65,12 +65,13 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
-            categorySlug
+            typeSlug
+            elementSlugs
           }
           frontmatter {
             title
             date
-            category
+            type
             description
           }
         }
