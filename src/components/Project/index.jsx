@@ -8,11 +8,42 @@ class Project extends React.Component {
     const {
       title,
       date,
+      github,
       type,
       elements,
       description,
     } = this.props.data.node.frontmatter
     const { slug, typeSlug, elementSlugs } = this.props.data.node.fields
+
+    const titleLink = ((github !== "") ?
+      <a href={github} target="__blank" className="project__title-link">{title}</a>
+      :
+      <Link className="project__title-link" to={slug}>{title}</Link>
+    )
+
+    const learnMoreLink = ((slug !== "none") ?
+      <span>
+        <Link className="project__readmore" to={slug}>
+        Learn more
+        </Link>
+        <span>
+          <i className="project__readmore__arrow icon-right-open-mini" />
+          <span className="project__meta-divider" />
+        </span>
+      </span>
+      :
+      ""
+    )
+
+    const githubLink = ((github !== "") ?
+      <span>
+        <a href={github} target="__blank" className="project__readmore">
+          View on GitHub
+        </a><i className="project__readmore__arrow icon-right-open-mini" />
+      </span>
+      :
+      ""
+    )
 
     const elementsList = []
     elements.forEach((element, j) => {
@@ -35,16 +66,13 @@ class Project extends React.Component {
           </span>
         </div>
         <h2 className="project__title">
-          <Link className="project__title-link" to={slug}>
-            {title}
-          </Link>
+          {titleLink}
+          {((github !== "") ?  <i className="icon-github-circled" /> : "")}
           <span className="project__meta-divider" />
           {elementsList}
         </h2>
         <p className="project__description">{description}</p>
-        <Link className="project__readmore" to={slug}>
-          Read
-        </Link><i className="project__readmore__arrow icon-right-open-mini" />
+        {learnMoreLink}{githubLink}
       </div>
     )
   }
