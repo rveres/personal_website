@@ -13,7 +13,7 @@ class ElementTemplate extends React.Component {
     return (
       <Layout>
         <div>
-          <Helmet title={`All Posts using "${element}" - ${title}`} />
+          <Helmet title={`All Projects involving "${element}" - ${title}`} />
           <Sidebar {...this.props} />
           <ElementTemplateDetails {...this.props} />
         </div>

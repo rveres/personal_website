@@ -13,7 +13,7 @@ class CategoryTemplate extends React.Component {
     return (
       <Layout>
         <div>
-          <Helmet title={`${category} - ${title}`} />
+          <Helmet title={`All ${category} posts - ${title}`} />
           <Sidebar {...this.props} />
           <CategoryTemplateDetails {...this.props} />
         </div>

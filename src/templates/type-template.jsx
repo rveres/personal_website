@@ -13,7 +13,7 @@ class TypeTemplate extends React.Component {
     return (
       <Layout>
         <div>
-          <Helmet title={`${type} - ${title}`} />
+          <Helmet title={`All ${type} projects - ${title}`} />
           <Sidebar {...this.props} />
           <TypeTemplateDetails {...this.props} />
         </div>
