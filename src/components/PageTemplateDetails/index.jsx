@@ -12,7 +12,9 @@ class PageTemplateDetails extends React.Component {
         <div className="content">
           <div className="content__inner">
             <div className="page">
-              <h1 className="page__title">{page.frontmatter.title}</h1>
+              <h1 className="page__title">
+                <span className="page__title__text">{page.frontmatter.title}</span>
+              </h1>
               <div
                 className="page__body"
                 /* eslint-disable-next-line react/no-danger */
