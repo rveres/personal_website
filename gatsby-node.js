@@ -17,6 +17,7 @@ exports.createPages = ({ graphql, actions }) => {
     const resumeTemplate = path.resolve('./src/templates/resume-template.jsx')
     const projectTemplate = path.resolve('./src/templates/project-template.jsx')
     const projectListTemplate = path.resolve('./src/templates/project-list-template.jsx')
+    const elementTemplate = path.resolve('./src/templates/element-template.jsx')
 
     graphql(`
       {
@@ -33,6 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
                 tags
                 layout
                 category
+                elements
               }
             }
           }
@@ -112,18 +114,18 @@ exports.createPages = ({ graphql, actions }) => {
             context: { slug: edge.node.fields.slug },
           })
 
-          let tags = []
-          if (_.get(edge, 'node.frontmatter.tags')) {
-            tags = tags.concat(edge.node.frontmatter.tags)
+          let elements = []
+          if (_.get(edge, 'node.frontmatter.elements')) {
+            elements = elements.concat(edge.node.frontmatter.elements)
           }
 
-          tags = _.uniq(tags)
-          _.each(tags, tag => {
-            const tagPath = `/tags/${_.kebabCase(tag)}/`
+          elements = _.uniq(elements)
+          _.each(elements, element => {
+            const elementPath = `/elements/${_.kebabCase(element)}/`
             createPage({
-              path: tagPath,
-              component: tagTemplate,
-              context: { tag },
+              path: elementPath,
+              component: elementTemplate,
+              context: { element },
             })
           })
 
@@ -185,5 +187,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       )}/`
       createNodeField({ node, name: 'categorySlug', value: categorySlug })
     }
+  }
+
+  if (node.frontmatter.elements) {
+    const elementSlugs = node.frontmatter.elements.map(
+      element => `/elements/${_.kebabCase(element)}/`
+    )
+    createNodeField({ node, name: 'elementSlugs', value: elementSlugs })
   }
 }

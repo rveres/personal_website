@@ -47,12 +47,12 @@ export const pageQuery = graphql`
       id
       html
       fields {
-        tagSlugs
+        elementSlugs
         slug
       }
       frontmatter {
         title
-        tags
+        elements
         date
         description
       }
