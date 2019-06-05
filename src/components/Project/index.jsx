@@ -13,8 +13,6 @@ class Project extends React.Component {
     } = this.props.data.node.frontmatter
     const { slug, typeSlug } = this.props.data.node.fields
 
-    console.log(type);
-
     return (
       <div className="post">
         <div className="post__meta">
