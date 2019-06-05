@@ -1,6 +1,6 @@
 ---
 title: "Projects"
 layout: projects
-path: "/projects"
+path: "/projects/"
 ---
 This will be replaced.

@@ -15,6 +15,8 @@ exports.createPages = ({ graphql, actions }) => {
       './src/templates/category-template.jsx'
     )
     const resumeTemplate = path.resolve('./src/templates/resume-template.jsx')
+    const projectTemplate = path.resolve('./src/templates/project-template.jsx')
+    const projectListTemplate = path.resolve('./src/templates/project-list-template.jsx')
 
     graphql(`
       {
@@ -53,6 +55,12 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path: edge.node.fields.slug,
             component: slash(postListTemplate),
+            context: { slug: edge.node.fields.slug },
+          })
+        } else if (_.get(edge, 'node.frontmatter.layout') === 'projects') {
+          createPage({
+            path: edge.node.fields.slug,
+            component: slash(projectListTemplate),
             context: { slug: edge.node.fields.slug },
           })
         } else if (_.get(edge, 'node.frontmatter.layout') === 'resume') {
@@ -97,7 +105,44 @@ exports.createPages = ({ graphql, actions }) => {
               context: { category },
             })
           })
-        }
+        } else if (_.get(edge, 'node.frontmatter.layout') === 'project') {
+          createPage({
+            path: edge.node.fields.slug,
+            component: slash(projectTemplate),
+            context: { slug: edge.node.fields.slug },
+          })
+
+          let tags = []
+          if (_.get(edge, 'node.frontmatter.tags')) {
+            tags = tags.concat(edge.node.frontmatter.tags)
+          }
+
+          tags = _.uniq(tags)
+          _.each(tags, tag => {
+            const tagPath = `/tags/${_.kebabCase(tag)}/`
+            createPage({
+              path: tagPath,
+              component: tagTemplate,
+              context: { tag },
+            })
+          })
+
+          let categories = []
+          if (_.get(edge, 'node.frontmatter.category')) {
+            categories = categories.concat(edge.node.frontmatter.category)
+          }
+
+          categories = _.uniq(categories)
+          _.each(categories, category => {
+            const categoryPath = `/categories/${_.kebabCase(category)}/`
+            createPage({
+              path: categoryPath,
+              component: categoryTemplate,
+              context: { category },
+            })
+          })
+        } 
+
       })
 
       resolve()
