@@ -19,8 +19,8 @@ class Project extends React.Component {
       elementsList.push(
         <span className="post__meta-category" key={elementSlugs[i]}>
           <Link to={elementSlugs[i]} className="post__meta-category-link">
-            {element + ((elementSlugs.length == i+1) ? '' : ', ')}
-          </Link>
+            {element}
+          </Link>{((elementSlugs.length == i+1) ? '' : ', ')}
         </span>
       )
     })
