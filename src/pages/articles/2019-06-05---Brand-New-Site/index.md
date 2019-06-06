@@ -1,14 +1,15 @@
 ---
-title: Upgraded to Gatsby v2
-date: "2018-10-18T16:51:00.000Z"
+title: Introducing A Brand New Website
+date: "2019-06-05T22:21:00.000Z"
 layout: post
 draft: false
-path: "/posts/upgraded-to-gatsby-v2/"
-category: "Gatsby"
+path: "/posts/brand-new-website/"
+category: "Update"
 tags:
-  - "Gatsby"
-  - "Web Development"
-description: "This starter has been forked and upgraded to Gatsby v2"
+  - "Personal"
+  - "Update"
+  - "New website"
+description: "Introducing my brand new website. As a complete overhaul, this website offers much more info about what I'm up to, as well as the projects I'm involved in. Additionally, there's now space for posts about my thoughts on various subjects in addition to updates on my projects."
 ---
 
 This is a Gatsby v2 compatible version of the

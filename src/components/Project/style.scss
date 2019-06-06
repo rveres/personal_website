@@ -23,7 +23,8 @@
     &__description {
         font-size: $typographic-base-font-size;
         @include line-height(1);
-        @include margin-bottom(.75);
+        margin-top: -1%;
+        margin-bottom: 1%;
     }
     &__meta {
         font-size: $typographic-small-font-size;
