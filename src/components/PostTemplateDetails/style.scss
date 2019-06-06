@@ -36,7 +36,18 @@
             }
         }
         & a {
-            text-decoration: underline;
+            text-decoration: none;
+            &:hover {
+                color: $color-primary;
+                border-bottom: 1px solid $color-primary;
+            }
+            &.gatsby-resp-image-link {
+                text-decoration: none;
+                &:hover {
+                    color: $color-primary;
+                    border-bottom: 0px solid $color-primary;
+                }
+            }
         }
         & .gatsby-highlight {
             max-width: $layout-post-single-width;
