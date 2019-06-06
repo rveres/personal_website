@@ -10,7 +10,7 @@ type: "mobile app"
 elements:
   - "android"
   - "apple"
-description: "My first foray into mobile cross-platform app development with Dart and Flutter. This project simulates a user interface for sending messages."
+description: "My first foray into mobile cross-platform app development with Dart and Flutter. This project is a mock-up for a user interface for sending messages."
 ---
 
 No content.
