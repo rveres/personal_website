@@ -64,6 +64,7 @@ export const pageQuery = graphql`
             title
             date
             github
+            livelink
             type
             elements
             description
