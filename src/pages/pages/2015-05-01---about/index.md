@@ -25,7 +25,7 @@ Here's a little more about what I do:
 ## What am I up to now?
 Well, honestly, a lot of things. But here's a glance.
 
-Currently, I'm helping to build [Tour](https://tourapp.co/), a cool new travel app that makes planning your next trip a lot easier. I highly recommend you check it out.
+Currently, **I'm helping to build [Tour](https://tourapp.co/)**, a cool new travel app that makes planning your next trip a lot easier. I highly recommend you check it out.
 
 Besides that, I'm always jumping around with projects, which you can check out on my [GitHub](https://github.com/thedeveloper733) or on the [projects](/projects) page. Right now, however, I'm mainly focused on applying Machine Learning to biology.
 
