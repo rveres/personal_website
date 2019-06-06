@@ -11,7 +11,6 @@ elements:
   - "python"
   - "html5"
   - "css3"
-  - "bootstrap"
   - "javascript"
   - "jquery"
 description: "My final project for Steve Huffman's CS253, Introduction to Web Development. As the first website I wrote from scratch, this project features a backend with CRUD functionality, versioning, and password salting written in Python. It also features an HTML/CSS frontend with custom jQuery validation."
