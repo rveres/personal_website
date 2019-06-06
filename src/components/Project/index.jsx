@@ -9,6 +9,7 @@ class Project extends React.Component {
       title,
       date,
       github,
+      livelink,
       type,
       elements,
       description,
@@ -35,11 +36,23 @@ class Project extends React.Component {
       ""
     )
 
+    const liveLink = ((livelink !== "") ?
+    <span>
+      <a href={livelink} target="__blank" className="project__readmore">
+        View live project
+      </a><i className="project__readmore__arrow icon-right-open-mini" />
+      <span className="project__meta-divider" />
+    </span>
+    :
+    ""
+  )
+
     const githubLink = ((github !== "") ?
       <span>
         <a href={github} target="__blank" className="project__readmore">
           View on GitHub
         </a><i className="project__readmore__arrow icon-right-open-mini" />
+        <span className="project__meta-divider" />
       </span>
       :
       ""
@@ -72,7 +85,7 @@ class Project extends React.Component {
           {elementsList}
         </h2>
         <p className="project__description">{description}</p>
-        {learnMoreLink}{githubLink}
+        {learnMoreLink}{liveLink}{githubLink}
       </div>
     )
   }

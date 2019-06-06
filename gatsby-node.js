@@ -38,6 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
                 elements
                 type
                 github
+                livelink
               }
             }
           }
