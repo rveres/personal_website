@@ -54,6 +54,7 @@
         max-width: $layout-post-single-width;
         margin-left: 15px;
         margin-right: 15px;
+        text-align: center;
         @include line-height(1);
         @include margin-top(1);
         @include margin-bottom(2);
@@ -67,6 +68,7 @@
         max-width: $layout-post-single-width;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
     &__tags {
         @include margin-bottom(.5);
