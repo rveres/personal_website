@@ -24,7 +24,7 @@ A lot of the learning I've been doing recently has been related to TensorFlow an
 
 In one word, it was a bummer. But it reminded me of a trend I'd been seeing for years now. For a summary, just look at Udacity's front page. When I signed up for my first Udacity course in 2016, Udacity's front page featured its free courses just as much--if not more--than its paid programs. But now (mid-2019 as of this writing), there's not a mention of free courses on Udacity's front page other than those hidden in the footer. Instead, the front page is full of advertisements for its paid features.
 
-And it's not only Udacity. I learned my first programming language on Codecademy, and, at the time, their free courses were an invaluable resources to programmers young and old, just like me. Their home page featured stories of students and their successes--all thanks to their free education. But now, their front page describes the shift in attitude better than I can.
+And it's not only Udacity. I learned my first programming language on Codecademy, and, at the time, their free courses were an invaluable resource to programmers young and old, just like me. Their home page featured stories of students and their successes--all thanks to their free education. But now, their front page describes the shift in attitude better than I can.
 
 ![Codecademy's marketing](./CodecademyMarketing.JPG)
 
