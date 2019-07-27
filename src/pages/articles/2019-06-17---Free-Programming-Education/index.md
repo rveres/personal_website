@@ -26,7 +26,7 @@ In one word, it was a bummer. But it reminded me of a trend I'd been seeing for 
 
 And it's not only Udacity. I learned my first programming language on Codecademy, and, at the time, their free courses were an invaluable resources to programmers young and old, just like me. Their home page featured stories of students and their successes--all thanks to their free education. But now, their front page describes the shift in attitude better than I can.
 
-![Codecademy's marketing](./CodecademyMarketing.jpg)
+![Codecademy's marketing](./CodecademyMarketing.JPG)
 
 *Count the number of times you see "Pro" or "Pricing"--and that's just the top of the page. (Copyright 2019 Codecademy.)*
 
@@ -34,7 +34,7 @@ And it's not only Udacity. I learned my first programming language on Codecademy
 
 Now don't get me wrong. **I understand that there is a need for a paid version of these products.** I'm no outsider to high hosting costs, which are only the beginning for these organizations. And of course, you can still access these websites' free content with some digging. But there's a difference between offering a paid version and shoving it in your users' faces every time they visit your website and try to visit a course. Don't believe me? Just take a look at Coursera's course sign-up flow.
 
-![Enroll button](./CourseraSignUp.jpg)
+![Enroll button](./CourseSignUp.jpg)
 
 *It doesn't really look like you're enrolling for free.*
 
