@@ -1,6 +1,6 @@
 ---
 title: The Importance of Keeping Programming Education Free. Forever.
-date: "2019-06-17T22:21:00.000Z"
+date: "2019-07-17T22:21:00.000Z"
 layout: post
 draft: false
 path: "/posts/free-programming-education/"
