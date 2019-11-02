@@ -3,7 +3,7 @@ title: Personal Website
 date: "2019-06-05T23:41:37.121Z"
 layout: project
 draft: false
-path: "/projects/brand-new-website/"
+path: "none"
 github: "https://github.com/thedeveloper733/personal_website"
 livelink: "https://robertveres.com/"
 type: "web"
