@@ -5,7 +5,7 @@ layout: project
 draft: false
 path: "none"
 github: "https://github.com/Tanulj-Kodolni"
-livelink: "https://http://tanuljkodolni.com/"
+livelink: "https://tanuljkodolni.com/"
 type: "web"
 elements:
   - "dot-net"
