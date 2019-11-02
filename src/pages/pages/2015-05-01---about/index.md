@@ -25,9 +25,12 @@ Here's a little more about what I do:
 ## What am I up to now?
 Well, honestly, a lot of things. But here's a glance.
 
-Currently, **I'm helping to build [Tour](https://tourapp.co/)**, a cool new travel app that makes planning your next trip a lot easier. I highly recommend you check it out.
+Currently, I'm building **[Tanulj Kódolni](http://tanuljkodolni.com/)**, or Learn to Code, the first online platform for learning to code in Hungarian. Simply put, Tanulj Kódolni has been my most ambitious project to date. Here's a sneak peek:
+![Tanulj Kódolni](./tkpreview.png)
 
-Besides that, I'm always jumping around with projects, which you can check out on my [GitHub](https://github.com/thedeveloper733) or on the [projects](/projects) page. Right now, however, I'm mainly focused on applying Machine Learning to biology.
+I'm also helping to build **[Tour](https://tourapp.co/)**, a cool new travel app that makes planning your next trip a lot easier. I highly recommend you check it out.
+
+Besides those things, I'm always jumping around with projects, which you can check out on my [GitHub](https://github.com/thedeveloper733) or on the [projects](/projects) page. Right now, however, I'm mainly focused on applying Machine Learning to biology.
 
 ## Want to reach out to me?
 Awesome. Head over to the [contact me](/contact) page.
