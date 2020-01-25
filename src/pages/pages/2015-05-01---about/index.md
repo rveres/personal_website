@@ -25,7 +25,7 @@ Here's a little more about what I do:
 ## What am I up to now?
 Well, honestly, a lot of things. But here's a glance.
 
-Currently, I'm building **Tanulj Kódolni**, or Learn to Code, the first online platform for learning to code in Hungarian. Simply put, Tanulj Kódolni has been my most ambitious project to date. Here's a sneak peek:
+Currently, I'm building **Tanulj Kódolni**, or Learn to Code, the first online platform for learning to code in Hungarian. Simply put, Tanulj Kódolni has been my most ambitious project to date.
 ![Tanulj Kódolni](./tkpreview.png)
 
 I'm also helping to build **[Tour](https://tourapp.co/)**, a cool new travel app that makes planning your next trip a lot easier. I highly recommend you check it out.
