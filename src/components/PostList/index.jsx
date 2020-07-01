@@ -20,7 +20,7 @@ class PostList extends React.Component {
         <div className="content">
           <div className="content__inner">
             <h1 className="page__title">
-              <span className="page__title__text">Posts</span>
+              <span className="page__title__text">Blog</span>
             </h1>
             <p className="post__page__title__subtext">My thoughts on various subjects, as well as updates on what I'm doing.</p>
             {items}

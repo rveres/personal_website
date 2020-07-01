@@ -6,8 +6,8 @@
         .post {
             a {
                 &:hover {
-                    color: #222;
-                    border-bottom: 1px solid #222;
+                    color: $color-primary;
+                    border-bottom: 1px solid $color-primary;
                 }
             }
             &__meta-category {

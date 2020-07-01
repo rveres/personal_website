@@ -35,7 +35,7 @@
         }
     }
     &__copyright {
-        color: lighten($color-gray, 18%);
+        color: $color-gray;
         font-size: $typographic-small-font-size;
         @include margin-bottom(0);
     }
@@ -48,7 +48,7 @@
             padding: 30px 20px 0;
             &:after {
                 background: $color-gray-border;
-                background: linear-gradient(to bottom, $color-gray-border 0%, $color-gray-border 48%, $color-white 100%);
+                background: linear-gradient(to top, $color-gray-border 0%, $color-gray-border 60%, $color-white 120%);
                 position: absolute;
                 content: "";
                 width: 1px;

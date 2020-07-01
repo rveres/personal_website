@@ -1,10 +1,71 @@
-@import "../../assets/scss/variables";
-@import "../../assets/scss/mixins";
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
 
-strong {
-    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #FFD0AE 50%);
+.page {
+  p {
+    a {
+      border-bottom: 1px solid $typographic-base-font-color;
+        &:hover {
+          color: #000;
+        }
+    }
+    a.gatsby-resp-image-link {
+      border-bottom: none;
+    }
+  }
 }
 
-.page__title__text {
-    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
+  .links {
+    .links__list-item {
+        background: darken($color-base, 40%);
+        color: $color-secondary;
+        &:hover {
+          background: darken($color-primary-hover, 40%);
+          color: $color-secondary;
+        }
+      
+    }
+  }
+
+
+p {
+  .gatsby-resp-image-wrapper::after {
+    box-shadow: 2px 8px 8px 0 $color-secondary;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.post-single {
+  ul {
+    li {
+      a {
+        background: $color-base;
+        color: $color-secondary;
+        &:hover {
+          background: $color-primary-hover;
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}
+
+.post__meta {
+  a {
+    color: $color-base;
+  }
+}
+
+a.post-single__home-button {
+  background: $color-base;
+  color: $color-secondary;
+  &:hover {
+    background: $color-primary-hover;
+    color: $color-secondary;
+  }
 }

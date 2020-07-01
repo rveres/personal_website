@@ -1,5 +1,5 @@
 ---
-title: "Posts"
+title: "Blog"
 layout: list
 path: "/posts"
 ---

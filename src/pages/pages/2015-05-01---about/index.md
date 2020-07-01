@@ -1,9 +1,9 @@
 ---
-title: "Hello, world!"
+title: "Hey, I'm Robert."
 layout: page
 path: "/"
 ---
-Hey there! Welcome to my slice of the internet.
+Welcome to my slice of the internet.
 
 I'm Robert Veres, a freshman at the College of Computing at Georgia Tech. I write code for websites; mobile apps; and low-level system architectures in more than a few programming languages, find out cool things from data, and help others learn how to code. But don't be fooled--I'm not just a programmer. I *love* biology and math and am always learning something new.
 
