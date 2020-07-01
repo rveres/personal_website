@@ -30,10 +30,6 @@ exports.createPages = ({ graphql, actions }) => {
                 tags
                 layout
                 category
-                elements
-                type
-                github
-                livelink
               }
             }
           }

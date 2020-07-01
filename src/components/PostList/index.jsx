@@ -8,7 +8,7 @@ import './style.scss'
 class PostList extends React.Component {
   render() {
     const items = []
-    const { title, subtitle } = this.props.data.site.siteMetadata
+    // const { title, subtitle } = this.props.data.site.siteMetadata
     const posts = this.props.data.allMarkdownRemark.edges
     posts.forEach(post => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
