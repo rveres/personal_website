@@ -6,7 +6,7 @@ module.exports = {
     url: 'https://robertveres.com',
     title: 'Robert Veres @thedeveloper733',
     subtitle:
-      "I'm a senior who loves programming, biology, and math--among many, many other things. You've stumbled across my slice of the internet: here, you'll find some info about who I am and what I do, as well as some of my writing.",
+      "I'm a freshman at Georgia Tech who loves programming, biology, and math--among many, many other things. You've stumbled across my slice of the internet: here, you'll find some info about who I am and what I do, as well as some of my writing.",
     copyright: '© 2020 All rights reserved.',
     credits: 'Made with ❤️ in Charlotte.',
     disqusShortname: '',
@@ -18,15 +18,6 @@ module.exports = {
       {
         label: 'Posts',
         path: '/posts/',
-      },
-      
-      {
-        label: 'Projects',
-        path: '/projects/'
-      },
-      {
-        label: 'Résumé',
-        path: '/resume/',
       },
       {
         label: 'Contact',

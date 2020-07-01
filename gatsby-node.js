@@ -14,11 +14,6 @@ exports.createPages = ({ graphql, actions }) => {
     const categoryTemplate = path.resolve(
       './src/templates/category-template.jsx'
     )
-    const resumeTemplate = path.resolve('./src/templates/resume-template.jsx')
-    const projectTemplate = path.resolve('./src/templates/project-template.jsx')
-    const projectListTemplate = path.resolve('./src/templates/project-list-template.jsx')
-    const elementTemplate = path.resolve('./src/templates/element-template.jsx')
-    const typeTemplate = path.resolve('./src/templates/type-template.jsx')
 
     graphql(`
       {
@@ -63,18 +58,6 @@ exports.createPages = ({ graphql, actions }) => {
             component: slash(postListTemplate),
             context: { slug: edge.node.fields.slug },
           })
-        } else if (_.get(edge, 'node.frontmatter.layout') === 'projects') {
-          createPage({
-            path: edge.node.fields.slug,
-            component: slash(projectListTemplate),
-            context: { slug: edge.node.fields.slug },
-          })
-        } else if (_.get(edge, 'node.frontmatter.layout') === 'resume') {
-          createPage({
-            path: edge.node.fields.slug,
-            component: slash(resumeTemplate),
-            context: { slug: edge.node.fields.slug },
-          })
         } else if (_.get(edge, 'node.frontmatter.layout') === 'post') {
           createPage({
             path: edge.node.fields.slug,
@@ -111,44 +94,7 @@ exports.createPages = ({ graphql, actions }) => {
               context: { category },
             })
           })
-        } else if (_.get(edge, 'node.frontmatter.layout') === 'project') {
-          createPage({
-            path: edge.node.fields.slug,
-            component: slash(projectTemplate),
-            context: { slug: edge.node.fields.slug },
-          })
-
-          let elements = []
-          if (_.get(edge, 'node.frontmatter.elements')) {
-            elements = elements.concat(edge.node.frontmatter.elements)
-          }
-
-          elements = _.uniq(elements)
-          _.each(elements, element => {
-            const elementPath = `/elements/${_.kebabCase(element)}/`
-            createPage({
-              path: elementPath,
-              component: elementTemplate,
-              context: { element },
-            })
-          })
-
-          let types = []
-          if (_.get(edge, 'node.frontmatter.type')) {
-            types = types.concat(edge.node.frontmatter.type)
-          }
-
-          types = _.uniq(types)
-          _.each(types, type => {
-            const typePath = `/types/${_.kebabCase(type)}/`
-            createPage({
-              path: typePath,
-              component: typeTemplate,
-              context: { type },
-            })
-          })
-        } 
-
+        }
       })
 
       resolve()
@@ -191,7 +137,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       )}/`
       createNodeField({ node, name: 'categorySlug', value: categorySlug })
     }
-  
     if (node.frontmatter.elements) {
       const elementSlugs = node.frontmatter.elements.map(
         element => `/elements/${_.kebabCase(element)}/`
@@ -205,6 +150,5 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       )}/`
       createNodeField({ node, name: 'typeSlug', value: typeSlug })
     }
-  
   }
 }
