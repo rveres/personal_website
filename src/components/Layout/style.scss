@@ -2,15 +2,33 @@
 @import '../../assets/scss/mixins';
 
 .page {
-  a {
-    border-bottom: 1px solid $typographic-base-font-color;
+  p {
+    a {
+      border-bottom: 1px solid $typographic-base-font-color;
+        &:hover {
+          color: #000;
+        }
+    }
+    a.gatsby-resp-image-link {
+      border-bottom: none;
+    }
   }
 }
 
-p {
-  .gatsby-resp-image-link {
-    border-bottom: none;
+  .links {
+    .links__list-item {
+        background: darken($color-base, 40%);
+        color: $color-secondary;
+        &:hover {
+          background: darken($color-primary-hover, 40%);
+          color: $color-secondary;
+        }
+      
+    }
   }
+
+
+p {
   .gatsby-resp-image-wrapper::after {
     box-shadow: 2px 8px 8px 0 $color-secondary;
     content: '';

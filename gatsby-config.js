@@ -16,7 +16,7 @@ module.exports = {
         path: '/',
       },
       {
-        label: 'Posts',
+        label: 'Blog',
         path: '/posts/',
       },
       {
