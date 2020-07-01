@@ -1,10 +1,53 @@
-@import "../../assets/scss/variables";
-@import "../../assets/scss/mixins";
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
 
-strong {
-    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #FFD0AE 50%);
+.page {
+  a {
+    border-bottom: 1px solid $typographic-base-font-color;
+  }
 }
 
-.page__title__text {
-    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
+p {
+  .gatsby-resp-image-link {
+    border-bottom: none;
+  }
+  .gatsby-resp-image-wrapper::after {
+    box-shadow: 2px 8px 8px 0 $color-secondary;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.post-single {
+  ul {
+    li {
+      a {
+        background: $color-base;
+        color: $color-secondary;
+        &:hover {
+          background: $color-primary-hover;
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}
+
+.post__meta {
+  a {
+    color: $color-base;
+  }
+}
+
+a.post-single__home-button {
+  background: $color-base;
+  color: $color-secondary;
+  &:hover {
+    background: $color-primary-hover;
+    color: $color-secondary;
+  }
 }
