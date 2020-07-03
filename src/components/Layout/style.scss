@@ -69,3 +69,12 @@ a.post-single__home-button {
     color: $color-secondary;
   }
 }
+
+a.post__meta-category-link, a.post__title-link, a.sidebar__author-title-link, a.menu__list-item-link, span.page__title__text {
+  font-weight: bold;
+}
+
+a.post__readmore {
+  border-bottom: 1px solid $typographic-base-font-color;
+  font-weight: bold;
+}
