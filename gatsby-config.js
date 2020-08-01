@@ -14,14 +14,17 @@ module.exports = {
       {
         label: 'About',
         path: '/',
+        type: 1,
       },
       {
-        label: 'Blog',
-        path: '/posts/',
+        label: 'Writing',
+        path: 'https://medium.com/@robertveres',
+        type: 2,
       },
       {
         label: 'Contact',
         path: '/contact/',
+        type: 1,
       },
     ],
     author: {
