@@ -20,7 +20,7 @@ Here's a little more about what I do:
 * **Frontend Web Development** in most of the popular frameworks
 * **Mobile Development** on Android and iOS with Flutter and React Native
 * **Data Analysis** and **Machine Learning** using Pandas, Numpy, TensorFlow, and Keras
-* **Data Engineering** with the Apache suite: Hadoop, Spark, Kafka, & Flink
+* **Data Engineering** with the Apache suite: Hadoop, Spark, Kafka, and Flink
 * **Cloud Engineering** with Google Cloud Platform and Amazon Web Services
 * **Low-Level Programming** in C for UNIX and Intel architectures
 

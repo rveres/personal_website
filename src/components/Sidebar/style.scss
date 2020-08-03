@@ -48,11 +48,11 @@
             padding: 30px 20px 0;
             &:after {
                 background: $color-gray-border;
-                background: linear-gradient(to top, $color-gray-border 0%, $color-gray-border 20%, $color-white 120%);
+                background: linear-gradient(to top, $color-gray-border 10%, $color-gray-border 20%, $color-white 130%);
                 position: absolute;
                 content: "";
                 width: 1px;
-                height: 600px;
+                height: 640px;
                 top: 30px;
                 right: -10px;
                 bottom: 0;
