@@ -36,7 +36,7 @@ class Layout extends React.Component {
     return (
       <Scrollbars style={{ height: this.state.height }}>
         <div className="layout">
-          <Helmet defaultTitle="Robert Veres @thedeveloper733"
+          <Helmet defaultTitle="Robert Veres"
             link={[{ rel: 'icon', type: 'image/png', sizes: "16x16", href: `${favicon16}` },
             { rel: 'icon', type: 'image/png', sizes: "32x32", href: `${favicon32}` },
             { rel: 'shortcut icon', type: 'image/png', href: `${favicon96}` },

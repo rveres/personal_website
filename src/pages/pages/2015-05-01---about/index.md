@@ -25,7 +25,7 @@ Here's a little more about what I do:
 * **Low-Level Programming** in C for UNIX and Intel architectures
 
 ## What am I up to now?
-Well, the answer to that question is changing. Constantly. To check out what I'm working on right now, check out my [GitHub](https://github.com/thedeveloper733) page.
+Well, the answer to that question is changing. Constantly. To check out what I'm working on right now, check out my [GitHub](https://github.com/rveres) page.
 
 ## Want to reach out to me?
 Awesome. Head over to the [contact me](/contact) page.
