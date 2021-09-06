@@ -5,16 +5,16 @@ path: "/"
 ---
 Welcome to my slice of the internet.
 
-I'm Robert Veres, a freshman at the College of Computing at Georgia Tech. I write code for websites; mobile apps; and low-level system architectures in more than a few programming languages, find out cool things from data, and help others learn how to code. But don't be fooled--I'm not just a programmer. I *love* biology and math and am always learning something new.
+I'm Robert Veres, a senior pursuing of Bachelor of Science in Computer Science in the College of Computing at Georgia Tech. I write code for websites; mobile apps; and low-level system architectures, extract meaning from data, and tinker with electronics. I also *love* biology, math, and finance and am always learning something new.
 
 Beyond those things, I'm also Hungarian. And a vegetarian. And run 5Ks. And an (amateur) [photographer](https://www.flickr.com/photos/152383209@N08/). And am deeply interested in international affairs, both past and present. (Phew.)
 
 
-![That's me](./profile1.jpg)
+![That's me](./profile2.jpg)
 
-*That's me!*
+*That's me watching the sun rise over Atlanta, circa January 2021. It was really cold.*
 
-## Robert, the programmer
+## Robert, the programmer...and then some
 Here's a little more about what I do:
 * **Backend Web Development** with a variety of platforms and databases
 * **Frontend Web Development** in most of the popular frameworks
@@ -23,9 +23,17 @@ Here's a little more about what I do:
 * **Data Engineering** with the Apache suite: Hadoop, Spark, Kafka, and Flink
 * **Cloud Engineering** with Google Cloud Platform and Amazon Web Services
 * **Low-Level Programming** in C for UNIX and Intel architectures
+* **Electronics** prototyping and Printed Circuit Board development in Altium
+* **Quantitative Finance** and **Supply Chain Analysis** with tools such as the Bloomberg Terminal and Panjiva from S&P Global
+
+How did I learn all of this? Simply put, I love learning. I'm always looking for new courses to take and books to read.
 
 ## What am I up to now?
-Well, the answer to that question is changing. Constantly. To check out what I'm working on right now, check out my [GitHub](https://github.com/rveres) page.
+At the moment, I'm wrapping up the second (and final) year of my Computer Science degree at Georgia Tech.
+
+Beyond my degree, I'm hoping to work internationally, first in the Asia-Pacific region and then in Europe. I fundamentally believe that gaining international work experience is a must in this globally interconnected world.
+
+To check out what I'm working on right now, check out my [GitHub](https://github.com/rveres) page.
 
 ## Want to reach out to me?
 Awesome. Head over to the [contact me](/contact) page.

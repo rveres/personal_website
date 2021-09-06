@@ -7,8 +7,8 @@ module.exports = {
     title: 'Robert Veres @thedeveloper733',
     subtitle:
       "I'm a Computer Science student at Georgia Tech who loves programming, biology, and math--among many, many other things. You've stumbled across my slice of the internet: here, you'll find some info about who I am and what I do, as well as some of my writing.",
-    copyright: '© 2020 All rights reserved.',
-    credits: 'Made with ❤️ in Charlotte.',
+    copyright: '© 2021 All rights reserved.',
+    credits: 'Made with ❤️ in Charlotte, NC and Atlanta, GA.',
     disqusShortname: '',
     menu: [
       {
@@ -19,6 +19,11 @@ module.exports = {
       {
         label: 'Writing',
         path: 'https://medium.com/@robertveres',
+        type: 2,
+      },
+      {
+        label: 'Résumé',
+        path: '/resume.pdf',
         type: 2,
       },
       {

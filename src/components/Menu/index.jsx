@@ -11,7 +11,7 @@ class Menu extends React.Component {
           <Link
             to={item.path}
             className="menu__list-item-link"
-            activeClassName="menu__list-item-link menu__list-item-link--active"
+            activeclassname="menu__list-item-link menu__list-item-link--active"
           >
             {item.label}
           </Link>
@@ -21,7 +21,7 @@ class Menu extends React.Component {
           <a
             href={item.path}
             className="menu__list-item-link"
-            activeClassName="menu__list-item-link menu__list-item-link--active"
+            activeclassname="menu__list-item-link menu__list-item-link--active"
             target="_blank"
             rel="noopener noreferrer"
           >
