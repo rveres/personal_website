@@ -6692,7 +6692,7 @@
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
 
-"fsevents@^1.2.7":
+"fsevents@^1.2.7", "fsevents@^1.2.9":
   "integrity" "sha512-oeyj2H3EjjonWcFjD5NvZNE9Rqe4UW+nQBU2HNeKw0koVLEFIhtyETyAakeAM3de7Z/SW5kcA+fZUait9EApnw=="
   "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-1.2.9.tgz"
   "version" "1.2.9"
@@ -6911,15 +6911,16 @@
     "sharp" "^0.22.1"
     "svgo" "^1.2.0"
 
-"gatsby-plugin-sitemap@^2.0.1":
-  "integrity" "sha512-9YJUx2UyeYKC8GcLZ4ZsnPAmXi6I9dxu0UDDi85HydTWhV5yC+wgbhNGZH+KlzSTlFGfyAV25cSOyoEO8dXjWg=="
-  "resolved" "https://registry.npmjs.org/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-2.1.0.tgz"
-  "version" "2.1.0"
+"gatsby-plugin-sitemap@^2.12.0":
+  "integrity" "sha512-oY0SzFl7xDVfIp3f4dhsKuGknc6tLsZIdNWPB9jv3HEDIFpyohFjJ4tcH2rHG8Wm8ceW34XjgSW0fcyu/QQYxQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-2.12.0.tgz"
+  "version" "2.12.0"
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.12.5"
+    "common-tags" "^1.8.0"
     "minimatch" "^3.0.4"
     "pify" "^3.0.0"
-    "sitemap" "^1.12.0"
+    "sitemap" "^1.13.0"
 
 "gatsby-plugin-typescript@^2.12.1":
   "integrity" "sha512-p32qJVDi5Xw1Oo5vLMUXdRBxSDlMrfxTGb7etMAsVfyLRlRhMLb2YsuXJIvN1IfybQ6Z3EbhlH293cpxn5jozg=="
@@ -13968,7 +13969,7 @@
   "resolved" "https://registry.npmjs.org/sisteransi/-/sisteransi-1.0.5.tgz"
   "version" "1.0.5"
 
-"sitemap@^1.12.0":
+"sitemap@^1.13.0":
   "integrity" "sha1-Vpy+IYAgKSamKiZs094Jyc60P4M="
   "resolved" "https://registry.npmjs.org/sitemap/-/sitemap-1.13.0.tgz"
   "version" "1.13.0"

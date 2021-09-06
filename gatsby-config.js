@@ -4,11 +4,12 @@ const pxtorem = require('postcss-pxtorem')
 module.exports = {
   siteMetadata: {
     url: 'https://robertveres.com',
+    siteUrl: 'https://robertveres.com',
     title: 'Robert Veres @thedeveloper733',
     subtitle:
       "I'm a Computer Science student at Georgia Tech who loves programming, biology, and math--among many, many other things. You've stumbled across my slice of the internet: here, you'll find some info about who I am and what I do, as well as some of my writing.",
     copyright: '© 2021 All rights reserved.',
-    credits: 'Made with ❤️ in Charlotte, NC and Atlanta, GA.',
+    credits: 'Made with ❤️ in Charlotte, NC.',
     disqusShortname: '',
     menu: [
       {
@@ -57,7 +58,7 @@ module.exports = {
           {
             site {
               siteMetadata {
-                site_url: url
+                siteUrl
                 title
                 description: subtitle
               }
@@ -129,46 +130,9 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-73379983-2' },
-    },
-    {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: ['open sans:400,400i'],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-sitemap',
-      options: {
-        query: `
-            {
-              site {
-                siteMetadata {
-                  url
-                }
-              }
-              allSitePage(
-                filter: {
-                  path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
-                }
-              ) {
-                edges {
-                  node {
-                    path
-                  }
-                }
-              }
-          }`,
-        output: '/sitemap.xml',
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
-            return {
-              url: site.siteMetadata.url + edge.node.path,
-              changefreq: 'daily',
-              priority: 0.7,
-            }
-          }),
       },
     },
     'gatsby-plugin-offline',
