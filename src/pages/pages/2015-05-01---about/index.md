@@ -5,9 +5,9 @@ path: "/"
 ---
 Welcome to my slice of the internet.
 
-I'm Robert Veres, a senior pursuing of Bachelor of Science in Computer Science in the College of Computing at Georgia Tech. I write code for websites; mobile apps; and low-level system architectures, extract meaning from data, and tinker with electronics. I also *love* biology, math, and finance and am always learning something new.
+I'm Robert Veres, a student pursuing of Bachelor of Science in Computer Science in the College of Computing at Georgia Tech. Currently, I'm working as a machine learning engineer in Japan. I write code for websites; mobile apps; and low-level system architectures, extract meaning from data, and tinker with electronics. I also *love* biology, math, and finance and am always learning something new.
 
-Beyond those things, I'm also Hungarian. And a vegetarian. And run 5Ks. And an (amateur) [photographer](https://www.flickr.com/photos/152383209@N08/). And am deeply interested in international affairs, both past and present. (Phew.)
+Beyond those things, I'm also Hungarian. And love to dance salsa. And run 5Ks. And an (amateur) [photographer](https://www.flickr.com/photos/152383209@N08/). And am deeply interested in international affairs, both past and present. (Phew.)
 
 
 ![That's me](./profile2.jpg)
@@ -19,7 +19,7 @@ Here's a little more about what I do:
 * **Backend Web Development** with a variety of platforms and databases
 * **Frontend Web Development** in most of the popular frameworks
 * **Mobile Development** on Android and iOS with Flutter and React Native
-* **Data Analysis** and **Machine Learning** using Pandas, Numpy, TensorFlow, and Keras
+* **Data Analysis** and **Machine Learning** using Pandas, Numpy, PyTorch, and TensorFlow
 * **Data Engineering** with the Apache suite: Hadoop, Spark, Kafka, and Flink
 * **Cloud Engineering** with Google Cloud Platform and Amazon Web Services
 * **Low-Level Programming** in C for UNIX and Intel architectures
@@ -29,9 +29,9 @@ Here's a little more about what I do:
 How did I learn all of this? Simply put, I love learning. I'm always looking for new courses to take and books to read.
 
 ## What am I up to now?
-At the moment, I'm wrapping up the second (and final) year of my Computer Science degree at Georgia Tech.
+At the moment, I'm working as a machine learning engineer in NTT Communication Science Laboratories in Japan.
 
-Beyond my degree, I'm hoping to work internationally, first in the Asia-Pacific region and then in Europe. I fundamentally believe that gaining international work experience is a must in this globally interconnected world.
+After Japan, I'm hoping to work as a software/data/machine learning/hardware engineer in Europe. I fundamentally believe that gaining international work experience is a must in this globally interconnected world.
 
 To check out what I'm working on right now, check out my [GitHub](https://github.com/rveres) page.
 
